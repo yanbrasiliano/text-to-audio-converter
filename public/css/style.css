@@ -1,0 +1,132 @@
+* {
+  padding: 0;
+  margin: 0;
+  font-family: 'Helvetica', Arial, sans-serif;
+  box-sizing: border-box;
+}
+
+body {
+  background: linear-gradient(90deg, #320b74 0%, #090979 35%, #005b6e 100%);
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  text-align: center;
+}
+
+.container {
+  width: 100%;
+  max-width: 800px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+h1 {
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+
+h1 span {
+  color: #ed9222;
+}
+
+header p {
+  font-size: 1.2rem;
+}
+
+#content-input {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  width: 100%;
+}
+
+#text-input {
+  width: 100%;
+  max-width: 600px;
+  height: 150px;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  outline: none;
+  padding: 15px;
+  resize: vertical;
+}
+
+.upload-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+input[type="file"] {
+  display: none;
+}
+
+#file-label {
+  font-size: 1rem;
+  padding: 10px 20px;
+  background-color: #ed9222;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+#file-label:hover {
+  background-color: #d48a35;
+}
+
+.actions {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  width: 100%;
+}
+
+.action-box {
+  flex: 1 1 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+.actions select,
+.actions button,
+.actions input[type="range"] {
+  width: 100%;
+  max-width: 300px;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.actions select {
+  background-color: #fff;
+  color: #000;
+}
+
+.actions button {
+  background-color: #ed9222;
+  color: #fff;
+}
+
+.actions button:hover {
+  background-color: #d48a35;
+}
+
+#rate-value {
+  font-size: 1rem;
+  margin-top: -10px;
+}

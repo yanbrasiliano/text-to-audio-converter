@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Text to Speech Converter</title>
+  <link rel="stylesheet" href="./css/style.css" />
+  <script src="../src/main.js" defer></script>
+</head>
+
+<body>
+  <div class="container">
+    <header>
+      <h1>Text to <span>Speech</span> Converter</h1>
+      <p>Type a text or upload a file to be read:</p>
+    </header>
+    <main>
+      <section id="content-input">
+        <textarea placeholder="Type something..." id="text-input" aria-label="Text input"></textarea>
+        <div class="upload-section">
+          <label for="file-upload" id="file-label">Upload file</label>
+          <input type="file" id="file-upload" accept=".txt" aria-label="Upload text file" />
+        </div>
+      </section>
+      <section class="actions">
+        <div class="action-box full-width">
+          <label for="voice-selection">Select voice:</label>
+          <select id="voice-selection" aria-label="Voice selection"></select>
+        </div>
+        <div class="action-box">
+          <label for="rate-control">Speech Rate:</label>
+          <input type="range" id="rate-control" min="0.5" max="2" value="1" step="0.1" aria-label="Speech rate" />
+          <span id="rate-value">1</span>
+        </div>
+        <div class="action-box">
+          <button id="play-btn" aria-label="Play text">Play</button>
+        </div>
+        <div class="action-box">
+          <button id="download-text-btn" aria-label="Download text">Download Text</button>
+        </div>
+      </section>
+    </main>
+  </div>
+</body>
+
+</html>

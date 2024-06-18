@@ -7,6 +7,7 @@ This project is a simple text-to-audio converter built with vanilla JavaScript E
 - Convert text to speech using Web Speech API
 - Simple and intuitive user interface
 - Supports multiple languages and voices (based on browser support)
+- Speech rate and pitch adjustment.
 
 ## Getting Started
 
